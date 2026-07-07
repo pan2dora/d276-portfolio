@@ -6,6 +6,7 @@
     <title>Resume</title>
   </head>
   <body>
+    <!-- Nav Bar-->
     <nav>
       <a href="/index.html">Home</a>
       <a href="/resume.html">Resume</a>
@@ -13,5 +14,183 @@
       <a href="/career-goals.html">Career Goals</a>
       <a href="#">Blog</a>
     </nav>
+    <!-- Date & time -->
+    <!-- Javascript -->
+    <div id="date">
+      <script type="text/javascript">
+        const date = new Date();
+        document.getElementById("date").innerHTML = date.toDateString();
+        let dateStr = date.toDateString()
+        console.log(`Todays date is ${dateStr}!`);
+        
+      </script>
+
+
+    </div>
+    <!-- Header -->
+    <header>
+      <h1>Pandora Brown's Resume</h1>
+      <p>Email | Phone number | Location | Linkedin</p>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!--Professional Summary -->
+      <section id="summary">
+        <h2>Summary</h2>
+        <article>
+          <p>
+            Motivated and detail-oriented professional with a foundation in
+            full-stack web development, customer service and acting for theatre.
+            Possesses strong problem- solving and communication skills paired
+            with a collaborative mindset and creativity.
+          </p>
+        </article>
+      </section>
+      <hr />
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <!-- Project #1 -->
+        <article>
+          <header>
+            <h3>Project name</h3>
+            <p>
+              <em><strong>MERN Stack</strong></em>
+            </p>
+          </header>
+          <p><time datetime="2019-03">Current</time></p>
+          <ul>
+            <li>
+              Meal prep application that allows users to cater their meal prep
+              around budgets.
+            </li>
+            <a href="#"> <li>Github Link</li></a>
+          </ul>
+        </article>
+      </section>
+      <hr />
+      <!-- Experience -->
+      <section id="experience">
+        <h2>Experience</h2>
+        <!-- Job 1 -->
+        <article>
+          <header>
+            <h3>Lead Barista</h3>
+            <p>Cafe</p>
+          </header>
+          <p>
+            <time datetime="2019-03">March 2019-present</time>
+          </p>
+          <ul>
+            <li>
+              Provided excellent customer service by making guests feel welcome,
+              taking orders accurately, and making recommendations based on
+              their preferences.
+            </li>
+            <li>
+              Trained and guided new bartenders on drink preparation standards,
+              menu knowledge, and acts of service.
+            </li>
+            <li>
+              Actively listened to customer complaints and suggestions,
+              addressing issues promptly and effectively to ensure a positive
+              experience for all patrons.
+            </li>
+          </ul>
+        </article>
+        <!-- Job 2 -->
+        <article>
+          <header>
+            <h3>TEACHING ASSISTANT</h3>
+            <p>University</p>
+          </header>
+          <p>
+            <time datetime="2019-03">March 2019-present</time>
+          </p>
+          <ul>
+            <li>
+              Mentored 11th and 12th graders through a two-week-long summer camp
+              focused on Python programming, overseeing their progress from
+              foundational concepts to the completion of a capstone project.
+            </li>
+            <li>
+              Facilitated hands-on learning experiences, including web
+              development workshops, to reinforce HTML and CSS fundementals.
+            </li>
+          </ul>
+        </article>
+        <!-- Job 3 -->
+        <!-- 
+        <article>
+          <header>
+            <h3>Job Title</h3>
+            <p>Organization/company</p>
+          </header>
+          <p>
+            <time datetime="2019-03">Date-present</time>
+          </p>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article> 
+        -->
+      </section>
+      <hr />
+      <!-- Education -->
+      <section id="education">
+        <h2>Education</h2>
+        <table>
+          <caption>
+            <em><span>Emphasis in Computer Science</span></em>
+          </caption>
+          <tr>
+            <th>Institution</th>
+            <th>Certification</th>
+            <th>Completion</th>
+            <th>Location</th>
+          </tr>
+          <tr>
+            <td>Western Governors University</td>
+            <td>B.S. Computer Science</td>
+            <td><time datetime="2027-07">Spring 2027</time></td>
+            <td>Salt Lake City, Utah (Online)</td>
+          </tr>
+
+          <tr>
+            <td>CodeSquad</td>
+            <td>Certificate in Fullstack Web Development</td>
+            <td><time datetime="2025-06">June 2025</time></td>
+            <td>Boston, MA (Remote Learning)</td>
+          </tr>
+          <tr>
+            <td>Techtonica</td>
+            <td>Certificate in Fullstack Web Development</td>
+            <td><time datetime="2023-07">July 2023 </time></td>
+            <td>San Francisco, CA (Remote Learning)</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- Technical Skills -->
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul style="columns: 3">
+          <li>React</li>
+          <li>Javascript</li>
+          <li>HTML</li>
+        </ul>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <hr />
+      Pandora Brown <br />
+      email <br />
+      Boston MA <br />
+      phone number
+    </footer>
   </body>
 </html>
