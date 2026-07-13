@@ -1,33 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Career Goals</title>
-  </head>
-  <body>
-    <!-- Nav Bar -->
-    <nav>
-      <a href="/index.html">Home</a>
-      <a href="/resume.html">Resume</a>
-      <a href="/cover-letter.html">Cover Letter</a>
-      <a href="/career-goals.html">Career Goals</a>
-      <a href="#">Blog</a>
-    </nav>
-    <!-- Main Content -->
-     <header>
-       <h1>Career Goals</h1>
-     </header>
-    <main>
-     
 
-    </main>
-    <footer>
-      <hr />
-      Pandora Brown <br />
-      email <br />
-      Boston MA <br />
-      phone number
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Goals</title>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/resume.html">Resume</a>
+    <a href="/cover-letter.html">Cover Letter</a>
+    <a href="/career-goals.html">Career Goals</a>
+    <a href="#">Blog</a>
+  </nav>
+
+  <header>
+
+
+
+
+    <audio src="audio/Type beat.mp3" controls>
+      <source src="https://www.youtube.com/watch?v=GMaav9A_2IE">
+    </audio>
+    <h1>Career Goals</h1>
+  </header>
+  <!-- Main Content -->
+  <main>
+
+    <!-- Past -->
+    <h3>Past</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perferendis consectetur inventore officiis magni,
+      eaque vel ratione nisi amet rerum ducimus provident non ullam harum minus, voluptatum tenetur saepe ea.
+      <img src="/images/csquad1.jpeg" alt="Black and white image with writing">
+    </p>
+    <!-- Current -->
+    <h3>Current</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, sapiente quisquam excepturi omnis culpa illum,
+      labore voluptate animi molestiae suscipit aut eveniet quis ut veritatis adipisci tempora praesentium debitis
+      incidunt.</p>
+    <video src="video/ptechtonica.mp4" controls></video>
+    <!-- Future -->
+    <h3>Future</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iste doloribus recusandae sapiente, totam
+      rerum voluptatem. Ex, dolorum quo quam nam molestias repellendus voluptate exercitationem consequatur possimus
+      facere esse accusantium.</p>
+    <!-- Form -->
+    <form action="">
+      <!-- First name -->
+      <label for="fname">First name</label>
+      <input type="text">
+      <!-- Last Name -->
+      <label for="lname">Last name</label>
+      <input type="text">
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input type="email" required>
+      <!-- Email -->
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+      <!--Company name  -->
+      <label for="">Company name</label>
+      <input type="text">
+      <!-- Perfered Contact -->
+
+      <label for="time-select">Perfered Contact:</label>
+      <select name="contact" id="contact-select">
+        <option disabled selected> Please choose an option </option>
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+        <option value="text">Text</option>
+      </select>
+      <!-- Best contact Time -->
+      <label for="">Best Time to contact</label>
+      <input type="radio" id="am">
+      <label for="am">AM</label>
+      <input type="radio" id="pm">
+      <label for="pm">PM</label>
+      <input type="radio" id="anytime">
+      <label for="anytime">Anytime</label>
+
+      <!-- Message -->
+      <label for="">Send a message:</label>
+      <textarea name="message" id="message" placeholder="Send a message here"></textarea>
+      <!-- Submit button -->
+      <input type="submit" name="submit" id="submit">
+    </form>
+  </main>
+  <footer>
+    <hr />
+    Pandora Brown <br />
+    email <br />
+    Boston MA <br />
+    phone number
+  </footer>
+</body>
+
 </html>
