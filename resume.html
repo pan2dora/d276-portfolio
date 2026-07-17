@@ -10,23 +10,18 @@
 
 <body>
   <!-- Nav Bar-->
-  <nav>
+   <div class="navbar-container">
+  <nav class="navbar">
     <a href="/index.html">Home</a>
     <a href="/resume.html">Resume</a>
     <a href="/cover-letter.html">Cover Letter</a>
     <a href="/career-goals.html">Career Goals</a>
     <a href="#">Blog</a>
   </nav>
+  </div>
   <!-- Date & time -->
 
-  <div id="date">
-    <script type="text/javascript">
-      const date = new Date();
-      document.getElementById("date").innerHTML = date.toDateString();
-      let dateStr = date.toDateString();
-      console.log(`Todays date is ${dateStr}!`);
-    </script>
-  </div>
+
   <!-- Header -->
   <header>
     <h1>Pandora Brown's Resume</h1>
@@ -35,6 +30,14 @@
 
   <!-- MAIN CONTENT -->
   <main>
+      <div id="date">
+    <script type="text/javascript">
+      const date = new Date();
+      document.getElementById("date").innerHTML = date.toDateString();
+      let dateStr = date.toDateString();
+      console.log(`Todays date is ${dateStr}!`);
+    </script>
+  </div>
     <!--Professional Summary -->
     <section id="summary">
       <h2>Summary</h2>

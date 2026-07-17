@@ -1,8 +1,91 @@
-:root{
-   
+:root {
+  /* Browns */
+  --toasty: #d8a882;
+  --foam: #a47d60;
+  --mocha: #946440;
+  --coldbrew: #693f31;
+  --espresso: #333230;
+  /* Pinks */
+  --oyster: #eac3bf;
+  --pinkvelvet: #e77d77;
+  --rusticpink: #9f5448;
+  --truffle: #5a3735;
+  /* Golds */
+  --golden: #99783f;
+  --goldenrod: #bd7e0f;
+  --sandygold: #c59458;
+  --lightgold: #dcbaba;
+  --background: #f3ede0;
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifß;
-   background-color: beige;
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: var(--espresso);
+}
+/* Nav bar */
+.navbar-container {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  /* Change color later */
+  background-color: white;
+  box-shadow: 0px -15px 30px 20px var(--lightgold);
+  height: 3rem;
+  margin-top: -1%;
+}
+
+nav,
+ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+nav,
+a {
+  color: brown;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--pinkvelvet);
+}
+
+a:hover {
+  color: var(--coldbrew);
+}
+
+a:active {
+  color: var(--lightgold);
+  text-decoration: underline;
+  background-color: var(--lightgold) 20px;
+}
+
+/* Main Content */
+main {
+  margin-top: 2%;
+}
+#main-homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-img {
+  margin:  2%;
+
+  width: 600px;
+  height: 800px;
+  box-shadow: 0px 0px 20px 20px var(--goldenrod);
 }
