@@ -10,34 +10,38 @@
 
 <body>
   <!-- Nav Bar-->
-   <div class="navbar-container">
-  <nav class="navbar">
-    <a href="/index.html">Home</a>
-    <a href="/resume.html">Resume</a>
-    <a href="/cover-letter.html">Cover Letter</a>
-    <a href="/career-goals.html">Career Goals</a>
-    <a href="#">Blog</a>
-  </nav>
+  <div class="navbar-container">
+    <nav class="navbar">
+      <a href="/index.html">Home</a>
+      <a href="/resume.html">Resume</a>
+      <a href="/cover-letter.html">Cover Letter</a>
+      <a href="/career-goals.html">Career Goals</a>
+      <a href="#">Blog</a>
+    </nav>
   </div>
   <!-- Date & time -->
 
 
   <!-- Header -->
-  <header>
-    <h1>Pandora Brown's Resume</h1>
-    <p>Email | Phone number | Location | Linkedin</p>
+  <header class="resume-header">
+    <h1>Pandora Brown</h1>
+    <ul>
+      <li><a href="mailto:pan2dora.brown@gmail.com">Email</a></li> |
+      <li>Greater Boston</li>|
+      <li>Linkedin </li>
+    </ul>
   </header>
 
   <!-- MAIN CONTENT -->
-  <main>
-      <div id="date">
-    <script type="text/javascript">
-      const date = new Date();
-      document.getElementById("date").innerHTML = date.toDateString();
-      let dateStr = date.toDateString();
-      console.log(`Todays date is ${dateStr}!`);
-    </script>
-  </div>
+  <main class="resume-main">
+    <div id="date">
+      <script type="text/javascript">
+        const date = new Date();
+        document.getElementById("date").innerHTML = date.toDateString();
+        let dateStr = date.toDateString();
+        console.log(`Todays date is ${dateStr}!`);
+      </script>
+    </div>
     <!--Professional Summary -->
     <section id="summary">
       <h2>Summary</h2>
@@ -82,7 +86,7 @@
       <article>
         <header>
           <h3>Lead Barista</h3>
-          <p>Cafe</p>
+          <h4>Cafe</h4>
         </header>
         <p>
           <time datetime="2019-03">March 2019-present</time>
@@ -107,8 +111,8 @@
       <!-- Job 2 -->
       <article>
         <header>
-          <h3>TEACHING ASSISTANT</h3>
-          <p>University</p>
+          <h3>Teach Assistant</h3>
+          <h4>University</h4>
         </header>
         <p>
           <time datetime="2019-03">March 2019-present</time>
@@ -125,39 +129,25 @@
           </li>
         </ul>
       </article>
-      <!-- Job 3 -->
-      <!-- 
-        <article>
-          <header>
-            <h3>Job Title</h3>
-            <p>Organization/company</p>
-          </header>
-          <p>
-            <time datetime="2019-03">Date-present</time>
-          </p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </article> 
-        -->
+    
     </section>
     <hr>
     <!-- Education -->
     <section id="education">
       <h2>Education</h2>
-      <table>
+      <table class="edu-table">
         <caption>
           <em><span>Emphasis in Computer Science</span></em>
         </caption>
+        <thead>
         <tr>
           <th>Institution</th>
           <th>Certification</th>
           <th>Completion</th>
           <th>Location</th>
         </tr>
-        <tr>
+        </thead>
+        <tr >
           <td>Western Governors University</td>
           <td>B.S. Computer Science</td>
           <td><time datetime="2027-07">Spring 2027</time></td>
@@ -182,20 +172,23 @@
     <!-- Technical Skills -->
     <section id="skills">
       <h2>Technical Skills</h2>
-      <ul style="columns: 3">
+      <ul >
         <li>React</li>
         <li>Javascript</li>
-        <li>HTML</li>
+        <li>HTML</li> 
+        <li>Python</li> 
+        <li>PostgreSQL</li>
+        <li>Mongo DB</li>
+        <li>WordPress</li>
+        <li>Express</li>
+        <li>Node.js</li>
       </ul>
     </section>
   </main>
   <!-- Footer -->
+   
   <footer>
-    <hr>
-    Pandora Brown <br>
-    email <br>
-    Boston MA <br>
-    phone number
+    <p>©Copyright 2050 by nobody. All rights reversed.</p>
   </footer>
 </body>
 

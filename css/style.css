@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   /* Browns */
   --toasty: #d8a882;
@@ -17,40 +21,42 @@
   --lightgold: #dcbaba;
   --background: #f3ede0;
 }
-
+html, body{
+    height: 100%;
+    margin: 0;
+}
 body {
   font-family: "Times New Roman", Times, serif;
   background-color: var(--background);
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
+main{
+    flex: 1;
+}
+
 h1 {
   color: var(--espresso);
 }
+
 /* Nav bar */
 .navbar-container {
-  display: flex;
-  width: 100vw;
+  padding: 5%;
   align-items: center;
-  justify-content: center;
-  /* Change color later */
   background-color: white;
-  box-shadow: 0px -15px 30px 20px var(--lightgold);
-  height: 3rem;
-  margin-top: -1%;
+  padding-top: 5%;
+     box-shadow: 0px -15px 30px 20px var(--lightgold);
 }
 
-nav,
-ul {
+nav {
   display: flex;
-  list-style: none;
-  gap: 50px;
-  margin: 0;
-  padding: 0;
+
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-nav,
 a {
   color: brown;
   font-weight: bold;
@@ -83,9 +89,102 @@ main {
 }
 
 .homepage-img {
-  margin:  2%;
+  margin: 2%;
 
   width: 600px;
   height: 800px;
   box-shadow: 0px 0px 20px 20px var(--goldenrod);
+}
+
+/* Resume */
+
+.resume-header {
+  text-align: center;
+}
+
+.resume-header h1 {
+  font-size: xx-large;
+  letter-spacing: 50%;
+}
+hr {
+  border: var(--coldbrew) solid 1px;
+  border-width: 100%;
+}
+
+.resume-main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.resume-header ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+.resume-main h2 {
+  font-size: 230%;
+  font-variant: small-caps;
+  letter-spacing: 40%;
+  background-color: var(--lightgold);
+}
+
+/* Resume Table */
+table,
+th,
+td {
+  padding: 10px;
+}
+table {
+  margin: 15px;
+  border-collapse: collapse;
+  padding: 10px;
+  width: 99%;
+}
+caption {
+  color: var(--coldbrew);
+  font-weight: bold;
+  letter-spacing: 5%;
+}
+th {
+  letter-spacing: 5%;
+  background-color: var(--lightgold);
+  border: 2px solid var(--espresso);
+  font-style: italic;
+  color: var(--coldbrew);
+  font-variant: small-caps;
+  font-size: larger;
+}
+
+td {
+  border: 1px solid var(--espresso);
+  vertical-align: top;
+  padding: 10px;
+  color: var(--espresso);
+  font-size: large;
+}
+
+/* Experience */
+#experience h4 {
+  font-style: italic;
+}
+
+/* Skills */
+
+#skills ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  box-shadow: 15px 0px 30px 0px var(--lightgold);
+text-align: center;
+padding-bottom: 5px ;
 }
